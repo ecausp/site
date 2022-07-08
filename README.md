@@ -2,7 +2,7 @@
 
 Arquivos de configuração para desenvolvimento do site institucional com Docker + Lando 
 
-O objetivo é ter um ambiente de desenvolvimento (LAMP) para desenvolvimento do site institucional utilizando Docker + Lando. Com isso não será mais necessário ter Apache, MySql e PHP instalados no desktop de desenvolvimento.
+O objetivo é ter um ambiente de desenvolvimento (Drupal8) para desenvolvimento do site institucional utilizando Docker + Lando. Com isso não será mais necessário ter Apache, MySql e PHP instalados no desktop de desenvolvimento.
 
 ## Uso
 
@@ -120,6 +120,6 @@ lando stop
 
 ## Sobre o Lando
 
-O Lando também possui outros comandos de acordo com o recipiente utilizado, Ex. LAMP, https://docs.lando.dev/config/lamp.html#tooling
+O Lando também possui outros comandos de acordo com o recipiente utilizado, Ex. Drupal8, https://docs.lando.dev/config/lamp.html#tooling
 
 O Lando possui recipientes para outros Frameworks (Symfony) e CMS's (Drupal e Wordpress), https://docs.lando.dev/config/recipes.html#supported-recipes
