@@ -1,0 +1,29 @@
+name: ecadev
+recipe: drupal8
+config:
+  webroot: docroot
+  php: '7.4'
+  database: mysql:5.7
+  myservice:
+    type: mysql
+    creds:
+      user: mysql -> drupal8
+      password: mysql -> drupal8
+      database: database -> drupal8
+  composer_version: 1.9.0
+  drush: ^9.5
+  via: apache
+services:
+  node:
+    type: node
+    globals:
+      gulp-cli: 8
+    build:
+      - cd themes/custom/eca && npm install && gulp css
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
+  gulp:
+    service: node
