@@ -32,25 +32,31 @@ Note que no arquivo .lando.yml você pode optar por exemplo pela versão do PHP,
 /seuprojeto/docroot/sites/default/services.yml
 ```
 
-### 6) Restaure o dump MySql do site 
+### 6) Inicialize o projeto
+
+```bash
+lando rebuild -y
+```
+
+### 7) Restaure o dump MySql do site 
 
 ```bash
 lando db-import backup/site.sql
 ```
 
-### 7) Desinstale os módulos Senha única USP e Google Analytics
+### 8) Desinstale os módulos Senha única USP e Google Analytics
 
 ```bash
 lando drupal mou senhaunicausp google_analytics
 ```
 
-### 8) Instale os módulos dev
+### 9) Instale os módulos dev
 
 ```bash
 lando drupal moi devel kint
 ```
 
-### 9) Adicione o projeto drush
+### 10) Adicione o projeto drush
 
 ```bash
 lando composer require drush/drush:10.x
@@ -58,19 +64,19 @@ lando composer require drush/drush:10.x
 lando drush cr
 ```
 
-### 10) Acesse
+### 11) Acesse
 
 ```bash
 https://ecadev.lndo.site
 ```
 
-### 11) Logue com seu usuário Drupal
+### 12) Logue com seu usuário Drupal
 
 ```bash
 https://ecadev.lndo.site/user
 ```
 
-### 12) Compilando o tema eca
+### 13) Compilando o tema eca
 
 ```bash
 cd seuprojeto
@@ -80,7 +86,7 @@ lando gulp compile
 lando gulp watch
 ```
 
-### 13 Comandos
+### 14) Comandos
 
 #### Recompila o projeto
 ```bash
@@ -90,16 +96,6 @@ lando rebuild -y
 #### Composer install no projeto
 ```bash
 lando composer install
-```
-
-#### Gera a key do projeto
-```bash
-lando php artisan key:generate
-```
-
-#### Roda as migrations do projeto
-```bash
-lando php artisan migrate
 ```
 
 #### Só para testar o override de configurações php no arquivo php.ini
@@ -127,13 +123,3 @@ lando stop
 O Lando também possui outros comandos de acordo com o recipiente utilizado, Ex. LAMP, https://docs.lando.dev/config/lamp.html#tooling
 
 O Lando possui recipientes para outros Frameworks (Symfony) e CMS's (Drupal e Wordpress), https://docs.lando.dev/config/recipes.html#supported-recipes
-
-## Endereço do projeto
-https://laravel.lndo.site
-
-## Se usa senha única pode-se cadastrar um oauth consumidor respondendo no endereço 
-https://laravel.lndo.site/callback 
-
-Dessa forma seus projetos dev com senha única podem utilizar o mesmo oauth consumidor
-
-
