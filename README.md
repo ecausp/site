@@ -34,10 +34,15 @@ Note que no arquivo .lando.yml você pode optar por exemplo pela versão do PHP,
 ### 6) Se existe destrói, recomplila o projeto, instala os pacotes, instala os pacotes Drush e Drupal Console
 
 ```bash
-lando destroy -y && lando rebuild -y && lando composer install
+lando destroy -y 
+lando rebuild -y 
+lando composer install
 lando composer require drush/drush:10.x drupal/drush drupal/console
 lando ssh --service appserver --user root --command "chmod +x /app/vendor/drush/drush/drush"
 lando ssh --service appserver --user root --command "chmod +x /app/vendor/drupal/console/bin/drupal"
+lando rebuild -y
+lando drush
+lando drupal
 ```
 
 ### 7) Restaure o dump MySql do site 
@@ -83,6 +88,7 @@ https://ecadev.lndo.site/user
 ```bash
 cd seuprojeto
 lando npm install --global gulp-cli
+lando rebuild -y
 cd docroot/themes/custom/eca
 lando gulp compile
 lando gulp watch
