@@ -82,10 +82,10 @@ https://ecadev.lndo.site/user
 ### 13) Compilando o tema eca
 
 ```bash
-cd seuprojeto
-lando npm install --global gulp-cli
-lando rebuild -y
 cd docroot/themes/custom/eca
+lando npm uninstall -g gulp-cli
+rm -rf node_modules
+lando npm install -g gulp-cli --save-dev
 lando gulp compile
 lando gulp watch
 ```
