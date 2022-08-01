@@ -88,9 +88,9 @@ lando gulp watch
 
 ### 14) Comandos
 
-#### Recompila o projeto
+#### Se existe destroy e recompila o projeto
 ```bash
-lando rebuild -y
+lando destroy && lando rebuild -y
 ```
 
 #### Composer install no projeto
