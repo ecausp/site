@@ -35,7 +35,7 @@ Note que no arquivo .lando.yml você pode optar por exemplo pela versão do PHP,
 ### 6) Se existe destrói, recomplila o projeto e instala os pacotes
 
 ```bash
-lando destroy && rebuild -y && lando composer install
+lando destroy -y && lando rebuild -y && lando composer install
 ```
 
 ### 7) Restaure o dump MySql do site 
