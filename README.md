@@ -37,6 +37,7 @@ Note que no arquivo .lando.yml você pode optar por exemplo pela versão do PHP,
 ```bash
 lando destroy -y && lando rebuild -y && lando composer install
 lando composer require drush/drush:10.x drupal/drush drupal/console
+lando ssh --service appserver --user root --command "chmod +x /app/vendor/drush/drush/drush"
 ```
 
 ### 7) Restaure o dump MySql do site 
