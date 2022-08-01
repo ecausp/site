@@ -18,7 +18,7 @@ Lando: https://docs.lando.dev/basics/installation.html#linux
 
 ### 3) Baixe o site institucional para a pasta do seu projeto
 
-### 4) Baixe o arquivo (.lando.yml) deste repositório para a raiz do seu projeto
+### 4) Baixe o arquivo (.lando.yml) deste repositório para a raiz do seu projeto e o arquivo (npm-shrinkwrap.json) para a pasta /docroot/themes/custom/eca
 
 ### 5) Configure os arquivos:
 
