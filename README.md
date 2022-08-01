@@ -32,10 +32,11 @@ Note que no arquivo .lando.yml você pode optar por exemplo pela versão do PHP,
 /seuprojeto/docroot/sites/default/services.yml
 ```
 
-### 6) Se existe destrói, recomplila o projeto e instala os pacotes
+### 6) Se existe destrói, recomplila o projeto, instala os pacotes, instala os pacotes Drush e Drupal Console
 
 ```bash
 lando destroy -y && lando rebuild -y && lando composer install
+lando composer require drush/drush:10.x drupal/drush drupal/console
 ```
 
 ### 7) Restaure o dump MySql do site 
@@ -44,10 +45,9 @@ lando destroy -y && lando rebuild -y && lando composer install
 lando db-import backup/site.sql
 ```
 
-### 8) Instale os pacotes Drush e Drupal Console, desinstale os módulos Senha única USP e Google Analytics
+### 8) Desinstale os módulos Senha única USP e Google Analytics
 
 ```bash
-lando composer require drush/drush:10.x drupal/drush drupal/console
 lando drupal mou senhaunicausp google_analytics
 ```
 
