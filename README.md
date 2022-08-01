@@ -20,10 +20,6 @@ Lando: https://docs.lando.dev/basics/installation.html#linux
 
 ### 4) Baixe o arquivo (.lando.yml) deste repositório para a raiz do seu projeto
 
-Note que o .gitignore vai substituir o do projeto. Isso é para que os arquivos do Lando não sejam versionados em seu projeto. Você pode optar em incluir no .gitignore do seu projeto ou se preferir pode deixar que os arquivos sejam versionados.
-
-Note que no arquivo .lando.yml você pode optar por exemplo pela versão do PHP, versão do Composer ou pelo servidor de Web utilizado, Apache ou Ngix
-
 ### 5) Configure os arquivos:
 
 ```bash
