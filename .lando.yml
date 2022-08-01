@@ -10,7 +10,7 @@ config:
       user: mysql -> drupal8
       password: mysql -> drupal8
       database: database -> drupal8
-  composer_version: 2-latest
+  composer_version: 1-latest
   drush: ^10
   via: apache
 services:
