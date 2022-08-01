@@ -47,7 +47,7 @@ lando db-import backup/site.sql
 ### 8) Instale os pacotes Drush e Drupal Console, desinstale os módulos Senha única USP e Google Analytics
 
 ```bash
-lando composer require drush/drush drupal/drush drupal/console
+lando composer require drush/drush:10.x drupal/drush drupal/console
 lando drupal mou senhaunicausp google_analytics
 ```
 
