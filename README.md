@@ -32,10 +32,10 @@ Note que no arquivo .lando.yml você pode optar por exemplo pela versão do PHP,
 /seuprojeto/docroot/sites/default/services.yml
 ```
 
-### 6) Inicialize o projeto
+### 6) Se existe destrói, recomplila o projeto e instala os pacotes
 
 ```bash
-lando rebuild -y
+lando destroy && rebuild -y && lando composer install
 ```
 
 ### 7) Restaure o dump MySql do site 
@@ -88,9 +88,9 @@ lando gulp watch
 
 ### 14) Comandos
 
-#### Se existe destroy e recompila o projeto
+#### Recompila o projeto
 ```bash
-lando destroy && lando rebuild -y
+lando rebuild -y
 ```
 
 #### Composer install no projeto
