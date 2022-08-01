@@ -12,6 +12,9 @@ config:
       database: database -> drupal8
   composer_version: 1-latest
   via: apache
+services:
+  node:
+    type: node
 tooling:
   npm:
     service: node
