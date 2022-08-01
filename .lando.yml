@@ -11,15 +11,7 @@ config:
       password: mysql -> drupal8
       database: database -> drupal8
   composer_version: 1-latest
-  drush: ^10
   via: apache
-services:
-  node:
-    type: node
-    globals:
-      gulp-cli: 8
-    build:
-      - cd themes/custom/eca && npm install && gulp css
 tooling:
   npm:
     service: node
@@ -27,3 +19,7 @@ tooling:
     service: node
   gulp:
     service: node
+  yarn:
+    service: node
+  drupal:
+    cmd: "/app/vendor/drupal/console/bin/drupal --root=/app/docroot"
