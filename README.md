@@ -27,7 +27,6 @@ Note que no arquivo .lando.yml você pode optar por exemplo pela versão do PHP,
 ### 5) Configure os arquivos:
 
 ```bash
-/seuprojeto/docroot/.htaccess
 /seuprojeto/docroot/sites/default/settings.php
 /seuprojeto/docroot/sites/default/services.yml
 ```
