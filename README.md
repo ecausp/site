@@ -75,6 +75,8 @@ https://ecadev.lndo.site
 https://ecadev.lndo.site/user
 ```
 
+#### Neste ponto o site está totalmente configurado para o ambiente dev
+
 ### 13) Compilando o tema eca
 
 ```bash
