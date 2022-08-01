@@ -44,9 +44,10 @@ lando destroy && rebuild -y && lando composer install
 lando db-import backup/site.sql
 ```
 
-### 8) Desinstale os módulos Senha única USP e Google Analytics
+### 8) Instale os pacotes Drush e Drupal Console, desinstale os módulos Senha única USP e Google Analytics
 
 ```bash
+lando composer require drush/drush drupal/drush drupal/console
 lando drupal mou senhaunicausp google_analytics
 ```
 
@@ -56,11 +57,9 @@ lando drupal mou senhaunicausp google_analytics
 lando drupal moi devel kint
 ```
 
-### 10) Adicione o projeto drush
+### 10) Cache rebuild com Drush
 
 ```bash
-lando composer require drush/drush:10.x
-# Teste o comando (cache rebuild) com
 lando drush cr
 ```
 
