@@ -87,7 +87,6 @@ lando npm uninstall -g gulp-cli
 rm -rf node_modules
 lando npm install -g gulp-cli --save-dev
 lando npm install
-lando gulp compile
 lando gulp watch
 ```
 
