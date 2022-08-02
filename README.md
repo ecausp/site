@@ -120,6 +120,7 @@ lando drupal cr
 ```
 Ao recarregar o siste verá que o fundo do menu principal foi alterado para a cor cyan
 
+#### ATENÇÃO! Esta alteração de cor no menu e outros testes devem ser desfeitos antes de colocar as modificações necessárias em produção. 
 
 ### 14) Comandos
 
