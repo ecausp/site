@@ -86,9 +86,40 @@ cd docroot/themes/custom/eca
 lando npm uninstall -g gulp-cli
 rm -rf node_modules
 lando npm install -g gulp-cli --save-dev
+lando npm install
 lando gulp compile
 lando gulp watch
 ```
+
+#### Neste ponto o comando gulp watch vai aguardar as mudanças feitas no tema e recompilar as modificações
+
+Um exemplo de modificação é:
+Trocar o fundo do menu principal
+No arquivo
+```bash
+docroot/themes/custom/eca/assets/scss/_layout/_header/_header-base.scss
+```
+Na classe 
+.header-main-header-menu-and-links
+Na linha 17 está a configuração padrão
+Na linha 18 está a configuração com cor cyan. Descomente essa linha.
+```bash
+background-color: cyan;
+```
+Salve o arquivo
+Note que no terminal onde o comando gulp watch foi executado, é informado que o arquivo estilos.css foi modificado, ou seja o tema foi compilado:
+```bash
+[Browsersync] Serving files from: ./
+[12:24:13] Starting 'sass'...
+[Browsersync] 1 file changed (estilos.css)
+[12:24:13] Finished 'sass' after 137 ms
+```
+Agora execute o comando de cache rebuild na raiz do projeto:
+```bash
+lando drupal cr
+```
+Ao recarregar o siste verá que o fundo do menu principal foi alterado para a cor cyan
+
 
 ### 14) Comandos
 
