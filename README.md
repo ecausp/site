@@ -50,13 +50,13 @@ lando db-import backup/site.sql
 ### 8) Desinstale os módulos Senha única USP e Google Analytics
 
 ```bash
-lando drush pm:uninstall senhaunicausp google_analytics
+lando drupal mou senhaunicausp google_analytics
 ```
 
 ### 9) Instale os módulos dev
 
 ```bash
-lando drush pm:enable devel kint
+lando drupal moi devel kint
 ```
 
 ### 10) Cache rebuild com Drush
