@@ -14,7 +14,14 @@ config:
   via: apache
 services:
   node:
-    type: node
+    # Support SCSS/SASS Framework and compiling
+    type: node:10
+    ssl: true
+    build:
+     - cd /app/docroot/themes/custom/eca && yarn
+    globals:
+      npm-cli: latest
+      gulp-cli: latest
 tooling:
   npm:
     service: node
