@@ -14,8 +14,7 @@ config:
   via: apache
 services:
   node:
-    # Support SCSS/SASS Framework and compiling
-    type: node:10
+    type: node:14
     ssl: true
     build:
      - cd /app/docroot/themes/custom/eca && yarn
