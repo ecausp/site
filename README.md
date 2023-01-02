@@ -81,6 +81,8 @@ https://ecadev.lndo.site/user
 
 ### 13) Compilando o tema eca
 
+#### Baixe o arquivo npm-shrinkwrap.json e salve ele na pasta docroot/themes/custom/eca
+
 ```bash
 cd docroot/themes/custom/eca
 lando npm uninstall -g gulp-cli
