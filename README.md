@@ -47,10 +47,10 @@ lando composer install
 lando db-import backup/site.sql
 ```
 
-### 8) Desinstale os módulos Senha única USP e Google Analytics
+### 8) Desinstale os módulos Senha única USP, Google Analytics e Smtp 
 
 ```bash
-lando drupal mou senhaunicausp google_analytics
+lando drupal mou senhaunicausp google_analytics smtp
 ```
 
 ### 9) Instale os módulos dev
@@ -87,8 +87,8 @@ https://ecadev.lndo.site/user
 cd docroot/themes/custom/eca
 lando npm uninstall -g gulp-cli
 rm -rf node_modules
-lando npm install -g gulp-cli --save-dev
-lando npm install
+lando npm install -g gulp-cli --save-dev --force
+lando npm install --force
 lando gulp watch
 ```
 
