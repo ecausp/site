@@ -14,7 +14,7 @@ config:
   via: apache
 services:
   node:
-    type: node:14
+    type: node:12
     ssl: true
     build:
      - cd /app/docroot/themes/custom/eca && yarn
