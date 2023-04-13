@@ -85,9 +85,9 @@ https://ecadev.lndo.site/user
 
 ```bash
 cd docroot/themes/custom/eca
-lando npm uninstall -g gulp-cli
+lando npm uninstall -g gulp-cli gulp --force
 rm -rf node_modules
-lando npm install -g gulp-cli --save-dev --force
+lando npm install -g gulp-cli gulp --save-dev --force
 lando npm install --force
 lando gulp watch
 ```
