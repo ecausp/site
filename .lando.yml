@@ -15,7 +15,7 @@ config:
 services:
   node:
     type: node:12
-    ssl: true
+    ssl: false
     build:
      - cd /app/docroot/themes/custom/eca && yarn
     globals:
