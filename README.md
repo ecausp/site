@@ -32,7 +32,8 @@ database: mysql:8.0
 # Acerte o path do projeto, lembrando que o Lando e o Docker enchergam a pasta /app como sendo a raiz do projeto
 # Comente as linhas de trusted_host_patterns
 # Descomente se necessário as linhas de erros php
-# Deixe o valor da variável ...'name' com 'LOCAL | DEV | ECA | Escola de Comunicações e Artes' ou algo de sua escolha que diferencie do site me produção ou homologação
+# Deixe o valor da variável ...'name' com 'LOCAL | DEV | ECA | Escola de Comunicações e Artes'
+# ou algo de sua escolha que diferencie do site em produção ou homologação
 /seuprojeto/docroot/sites/default/settings.php
 # Deixe a variável debug com valor true
 /seuprojeto/docroot/sites/default/services.yml
