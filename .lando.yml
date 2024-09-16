@@ -13,7 +13,7 @@ config:
   webroot: docroot
   php: '7.4'
   database: mysql:5.7
-  # database:8.0
+  # database: mysql:8.0
   myservice:
     type: mysql
     creds:
