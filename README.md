@@ -20,6 +20,11 @@ Lando: https://docs.lando.dev/basics/installation.html#linux
 
 ### 4) Baixe o arquivo (.lando.yml) deste repositório para a raiz do seu projeto
 
+```bash
+# Caso utilize mysql 8, altere no arquivo .lando.yml para:
+database: mysql:8.0
+```
+
 ### 5) Configure os arquivos:
 
 ```bash
