@@ -84,11 +84,20 @@ https://ecadev.lndo.site/user
 
 #### Baixe o arquivo npm-shrinkwrap.json e salve ele na pasta docroot/themes/custom/eca
 
+#### Aumente o número de watchers executando os comandos abaixo no seu PC 
+
+```bash
+sudo cat /proc/sys/fs/inotify/max_user_watches
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+sudo cat /proc/sys/fs/inotify/max_user_watches
+```
+
 ```bash
 cd docroot/themes/custom/eca
 lando npm uninstall -g gulp-cli gulp --force
 rm -rf node_modules
-lando npm install -g gulp-cli gulp --save-dev --force
+lando npm install -g gulp-cli gulp@3.9.1 --force
+# lando npm install -g gulp-cli gulp --save-dev --force
 lando npm install --force
 lando gulp watch
 ```
