@@ -150,7 +150,7 @@ Ao recarregar o siste verá que o fundo do menu principal foi alterado para a co
 
 #### ATENÇÃO! Esta alteração de cor no menu e outros testes devem ser desfeitos antes de colocar as modificações necessárias em produção. 
 
-### 14) Comandos
+### 14) Comandos Lando. Tem mais comandos comentados no arquivo .lando.yml
 
 #### Recompila o projeto
 ```bash
