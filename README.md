@@ -36,6 +36,7 @@ lando composer install
 lando composer require drush/drush:10.x drupal/drush drupal/console
 lando ssh --service appserver --user root --command "chmod +x /app/vendor/drush/drush/drush"
 lando ssh --service appserver --user root --command "chmod +x /app/vendor/drupal/console/bin/drupal"
+lando ssh --service appserver --user root --command "rm /app/bin/drush.php"
 lando ssh --service appserver --user root --command "ln -s /app/vendor/drush/drush/drush.php /app/bin/drush.php"
 lando rebuild -y
 lando composer install
