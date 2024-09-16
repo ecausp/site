@@ -1,9 +1,19 @@
+# lando rebuild -y
+# lando composer install
+# lando php artisan key:generate
+# lando php artisan migrate
+# lando php -i | grep upload_max_filesize
+# lando ssh --service appserver --user root --command "cat /etc/passwd"
+# lando conteiner location
+# /path/to/my/app => /app
+# $HOME => /user
 name: ecadev
 recipe: drupal8
 config:
   webroot: docroot
   php: '7.4'
   database: mysql:5.7
+  # database:8.0
   myservice:
     type: mysql
     creds:
