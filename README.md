@@ -28,7 +28,9 @@ database: mysql:8.0
 ### 5) Configure os arquivos:
 
 ```bash
+# Credenciais de conexão mysql iguais as do arquivo .lando.yml
 /seuprojeto/docroot/sites/default/settings.php
+# Deixe a variável debug com valor true
 /seuprojeto/docroot/sites/default/services.yml
 ```
 
@@ -50,25 +52,30 @@ lando composer install
 ### 7) Restaure o dump MySql do site 
 
 ```bash
+# Veririque o nome do arquivo com o dump 
 lando db-import backup/site.sql
 ```
 
 ### 8) Desinstale os módulos Senha única USP, Google Analytics e Smtp 
 
 ```bash
+# No ambiente de desenvolvimento não usamos os módulos Senha Única USP, Google Analytics e SMTP (envio de e-mails)
 lando drupal mou senhaunicausp google_analytics smtp
 ```
 
 ### 9) Instale os módulos dev
 
 ```bash
+# Ativando módulos de desenvolvimento
 lando drupal moi devel kint
 ```
 
 ### 10) Cache rebuild com Drush
 
 ```bash
+# Limpe o cache com cache rebuild com Drush ou Drupal Console
 lando drush cr
+lando drupal cr
 ```
 
 ### 11) Acesse
